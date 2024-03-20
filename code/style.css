@@ -8,7 +8,7 @@ header {
     left: 0;
 }
 
-/*-------------- CSS POUR LE FOOTER---------------- */
+/*-------------- CSS POUR LE BODY---------------- */
 
 body, html {
     margin: 0;
@@ -20,61 +20,60 @@ body, html {
 
 footer {
     background-color: #edecec; 
-    height: 100px; /* Hauteur du footer */
     position: fixed; /* Position fixée à l'écran */
     bottom: 0; /* En bas de la page */
-    width: calc(100% - 150px); /* Largeur totale moins la largeur de la sidebar */
-    justify-content: space-around; /* Espacement équivalent entre les éléments */
+    justify-content: space-between; /* Espacement équivalent entre les éléments */
     align-items: center; /* Centrage vertical */
-    margin-left: 150px; /* Marge à gauche équivalente à la largeur de la sidebar */
-    padding: 40px 20px; /* Espacement intérieur */
+    padding: 20px; /* Espacement intérieur */
     display: flex;
+    left: 150px;
+    right: 0;
 }
 
-.footer-nav ul {
+
+
+.footer-nav ul { /* Liste du footer */
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: left;
 }
 
-.footer-nav li {
+.footer-nav li { /* Élément de la liste du footer */
     margin-bottom: 10%;
     text-align: center;
 }
 
-.footer-nav a {
+.footer-nav a { /* Lien du footer */
     text-decoration: none;
     color: #565252;
     font-size: 16px;   
 }
 
-.footer-nav a:hover {
+.footer-nav a:hover { /* Lien au survol */
     text-decoration: underline;
     color: rgb(11, 165, 26);
 }
 
-.footer-message {
+.footer-message { /* Message du footer */
     background-color: #d7d7d7;
     padding: 18px;
-    margin: 0 20px;
+    margin: 0 20px; /* Marge à gauche et à droite */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Position relative pour le bouton */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
 }
 
-.footer-message p {
+.footer-message p { /* Paragraphe du message */
     margin: 0;
     padding-bottom: 10px;
     font-weight: bold;
     font-size: 16px;
 }
 
-.footer-message button {
+.footer-message button { /* Bouton du message */
     padding: 10px 20px;
     background-color: rgb(237, 239, 237);
     color: black;
@@ -84,21 +83,37 @@ footer {
     font-size: 14px;
 }
 
-.footer-message button:hover {
+.footer-message button:hover { /* Bouton du message au survol */
     background-color: rgb(11, 165, 26);
     color: white;
 }
 
-.footer-branding { 
-    position: absolute; /* Position absolue pour le logo */
-    bottom: 10px; /* En bas du footer */
+.footer-contact { /* Contact du footer */
+    text-align: right;
+    padding: 18px;
+}
+
+.footer-contact p { /* Paragraphe du contact */
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.footer-branding { /* Logo du footer */
+    position: absolute;
+    bottom: 5px; /* En bas du footer */
     left: 50%; /* Au milieu du footer */
-    transform: translateX(-50%); /* Décalage de 50% de la largeur du logo */    
-    font-size: 11px;
+    transform: translateX(-80%); /* Décalage de 75% de la largeur du logo */    
+    font-size: 10px;
     font-weight: normal;
     color: #565252;
     text-align: center;
 }
+
+.footer-branding p { /* Paragraphe du logo */
+    margin: 0;
+}
+
 
 /*-------------- CSS POUR LA SIDEBAR---------------- */
 
@@ -118,7 +133,7 @@ footer {
     align-items: center; /* Centrage horizontal */
 }
 
-.sidebar a {
+.sidebar a { /* Lien de la sidebar */
     writing-mode: vertical-rl; /* Écriture verticale */
     transform: rotate(180deg); /* Tourne le texte pour qu'il soit lu de haut en bas */
     text-decoration: none; /* Pas de soulignement */
@@ -128,14 +143,14 @@ footer {
     font-weight: bold; /* Police en gras */
 }
 
-.sidebar a:hover {
+.sidebar a:hover { /* Lien de la sidebar au survol */
     color: rgb(11, 165, 26); /* Couleur du texte au survol */
 }
 
 
 /*-------------- CSS POUR LE CONTENU---------------- */
 
-.content{
+.content{ 
     margin-left: 150px; /* Marge à gauche équivalente à la largeur de la sidebar */
     padding: 20px;
 }
