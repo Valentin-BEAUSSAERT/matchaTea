@@ -19,27 +19,35 @@ footer {
     height: 100px;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
+    width: calc(100% - 150px);
+    justify-content: space-around;
     align-items: center;
     margin-left: 150px;
     padding: 20px;
+    display: flex;
 }
 
-footer ul {
-    list-style-type: none; /* Supprime les puces de la liste */
-    padding: 0; /* Enlève le padding par défaut des listes */
-    margin: 0; /* Enlève la marge par défaut des listes */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
 }
 
-footer li {
-    padding: 5px 0; /* Espacement vertical entre les éléments de la liste */
+.footer-nav li {
+    margin-bottom: 8%;
+    text-align: center;
 }
 
-footer a {
-    color: #565252;
+.footer-nav a {
     text-decoration: none;
+    color: #565252;
+    font-size: 16px;   
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: rgb(11, 165, 26);
 }
 
 .sidebar {
@@ -69,6 +77,6 @@ footer a {
 }
 
 .content{
-    margin-left: 160px;
-    padding: 0px;
+    margin-left: 150px; /* Marge à gauche équivalente à la largeur de la sidebar */
+    padding: 20px;
 }
