@@ -1,10 +1,4 @@
 
-body, html {
-    margin: 0;
-    height: 100%;
-    font-family: 'Arial', sans-serif;
-}
-
 header {
     background-color: #ffffff;
     color: rgb(11, 165, 26);
@@ -12,6 +6,40 @@ header {
     font-size: 24px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     left: 0;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+footer {
+    background-color: #edecec;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    padding: 20px;
+}
+
+footer ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Enlève le padding par défaut des listes */
+    margin: 0; /* Enlève la marge par défaut des listes */
+}
+
+footer li {
+    padding: 5px 0; /* Espacement vertical entre les éléments de la liste */
+}
+
+footer a {
+    color: #565252;
+    text-decoration: none;
 }
 
 .sidebar {
@@ -38,4 +66,9 @@ header {
     font-size: 20px; /* Taille du texte */
     margin: 50px 0; /* Espacement entre les liens */
     font-weight: bold; /* Police en gras */
+}
+
+.content{
+    margin-left: 160px;
+    padding: 0px;
 }
