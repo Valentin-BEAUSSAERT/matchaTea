@@ -1,0 +1,41 @@
+
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    color: rgb(11, 165, 26);
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    left: 0;
+}
+
+.sidebar {
+    height: 100%; /* Hauteur totale */
+    width: 150px; /* Largeur de la sidebar */
+    position: fixed; /* Position fixée à l'écran */
+    z-index: 1; /* Reste au-dessus du contenu */
+    top: 0; /* En haut de la page */
+    left: 0; /* À gauche de la page */
+    background-color: #dfdede; /* Couleur de fond */
+    overflow-x: hidden; /* Cache la barre de défilement horizontale */
+    padding-top: 20px; /* Espacement au-dessus */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar a {
+    writing-mode: vertical-rl; /* Écriture verticale */
+    transform: rotate(180deg); /* Tourne le texte pour qu'il soit lu de haut en bas */
+    text-decoration: none; /* Pas de soulignement */
+    color: #565252; /* Couleur du texte */
+    font-size: 20px; /* Taille du texte */
+    margin: 50px 0; /* Espacement entre les liens */
+    font-weight: bold; /* Police en gras */
+}
