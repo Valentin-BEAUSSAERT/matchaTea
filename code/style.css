@@ -4,9 +4,11 @@ header {
     color: rgb(11, 165, 26);
     text-align: center;
     font-size: 24px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombre portée */
     left: 0;
 }
+
+/*-------------- CSS POUR LE FOOTER---------------- */
 
 body, html {
     margin: 0;
@@ -14,16 +16,18 @@ body, html {
     font-family: 'Arial', sans-serif;
 }
 
+/*-------------- CSS POUR LE FOOTER---------------- */
+
 footer {
-    background-color: #edecec;
-    height: 100px;
-    position: fixed;
-    bottom: 0;
-    width: calc(100% - 150px);
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 150px;
-    padding: 20px;
+    background-color: #edecec; 
+    height: 100px; /* Hauteur du footer */
+    position: fixed; /* Position fixée à l'écran */
+    bottom: 0; /* En bas de la page */
+    width: calc(100% - 150px); /* Largeur totale moins la largeur de la sidebar */
+    justify-content: space-around; /* Espacement équivalent entre les éléments */
+    align-items: center; /* Centrage vertical */
+    margin-left: 150px; /* Marge à gauche équivalente à la largeur de la sidebar */
+    padding: 40px 20px; /* Espacement intérieur */
     display: flex;
 }
 
@@ -35,7 +39,7 @@ footer {
 }
 
 .footer-nav li {
-    margin-bottom: 8%;
+    margin-bottom: 10%;
     text-align: center;
 }
 
@@ -50,6 +54,54 @@ footer {
     color: rgb(11, 165, 26);
 }
 
+.footer-message {
+    background-color: #d7d7d7;
+    padding: 18px;
+    margin: 0 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Position relative pour le bouton */
+}
+
+.footer-message p {
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-message button {
+    padding: 10px 20px;
+    background-color: rgb(237, 239, 237);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer-message button:hover {
+    background-color: rgb(11, 165, 26);
+    color: white;
+}
+
+.footer-branding { 
+    position: absolute; /* Position absolue pour le logo */
+    bottom: 10px; /* En bas du footer */
+    left: 50%; /* Au milieu du footer */
+    transform: translateX(-50%); /* Décalage de 50% de la largeur du logo */    
+    font-size: 11px;
+    font-weight: normal;
+    color: #565252;
+    text-align: center;
+}
+
+/*-------------- CSS POUR LA SIDEBAR---------------- */
+
 .sidebar {
     height: 100%; /* Hauteur totale */
     width: 150px; /* Largeur de la sidebar */
@@ -60,10 +112,10 @@ footer {
     background-color: #dfdede; /* Couleur de fond */
     overflow-x: hidden; /* Cache la barre de défilement horizontale */
     padding-top: 20px; /* Espacement au-dessus */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex; 
+    flex-direction: column; /* Alignement vertical */
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
 }
 
 .sidebar a {
@@ -75,6 +127,13 @@ footer {
     margin: 50px 0; /* Espacement entre les liens */
     font-weight: bold; /* Police en gras */
 }
+
+.sidebar a:hover {
+    color: rgb(11, 165, 26); /* Couleur du texte au survol */
+}
+
+
+/*-------------- CSS POUR LE CONTENU---------------- */
 
 .content{
     margin-left: 150px; /* Marge à gauche équivalente à la largeur de la sidebar */
